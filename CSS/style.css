@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 a {
@@ -61,12 +62,12 @@ a:hover {
   margin-top: 100px;
   margin: 100px 25% 10px 25%;
    */
-  width: 50%;
+  width: 250px;
 }
 
 .search-bar {
   margin: 10px auto;
-  width: 80%;
+  width: 300px;
   border-radius: 30px;
   height: 30px;
   border: solid gray 1px;
@@ -76,7 +77,9 @@ a:hover {
 .search-bar:hover {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
-
+#searchform:hover, #searchform:active, #searchform:focus{
+    outline: none;
+}
 #searchicon {
   margin-left: 8px;
   color: rgba(0, 0, 0, 0.754);
@@ -116,7 +119,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(128, 128, 128, 0.385);
+  background: rgb(222, 221, 221);
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -124,6 +127,7 @@ a:hover {
 .footer {
   list-style: none;
   display: flex;
+  padding: 0.2rem;
   /* margin: 0.5rem 0.5rem; */
 }
 .footerleft {
@@ -148,6 +152,6 @@ a:hover {
 
 @media (max-width: 660px) {
   .container {
-
     flex-direction: column;
+position: fixed;
   }
