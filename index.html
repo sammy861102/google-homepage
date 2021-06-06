@@ -13,23 +13,54 @@
   </head>
   <body>
     <!-- google navbar -->
-    <div class="navbar">
-      <ul>
-        <li><a href="#">Gmail</a></li>
-        <li><a href="#">Images</a></li>
-      </ul>
-    </div>
+    <nav class="navbar">
+      <a id="nav-link" href="#">Gmail</a>
+      <a id="nav-link" href="#">Images</a>
+      <a href="#"
+        ><img class="googleapps" src="./images/appsicon.png" alt=""
+      /></a>
+      <a href="#"><img id="user" src="./images/_DSC2205-Edit.jpg" alt="" /></a>
+    </nav>
 
     <!-- google logo -->
-    <div class="google-logo">
-      <img src="./images/googlelogo_color_272x92dp.png" alt="" />
-    </div>
-    <!-- google search bar -->
-    <div class="search-bar">
-      <form action="">
-        <input type="text" id="searchform" />
-        <button type="submit" id="submit"><i class="fas fa-search"></i></button>
-      </form>
+    <main class="main">
+      <img id="logo" src="./images/googlelogo_color_272x92dp.png" alt="" />
+
+      <!-- google search bar -->
+      <div class="search-bar">
+        <i id="searchicon" class="fas fa-search"></i>
+        <input
+          placeholder="Search Google or type a URL"
+          type="text"
+          id="searchform"
+        />
+        <a id="mic" href=""> <i class="fas fa-microphone"></i></a>
+      </div>
+      <!-- 2 boxes -->
+
+      <div class="boxes">
+        <a class="box" href="#">Google Search</a>
+        <a class="box" href="#">I'm feeling lucky!</a>
+      </div>
+    </main>
+    <!-- footer left-->
+    <div class="container">
+      <footer class="footerleft">
+        <ul class="footer">
+          <li class="footer-left"><a href="#">About</a></li>
+          <li class="footer-left"><a href="#">Advertising</a></li>
+          <li class="footer-left"><a href="#">Business</a></li>
+          <li class="footer-left"><a href="#">How search works</a></li>
+        </ul>
+      </footer>
+      <!-- footer right -->
+      <footer class="footerright">
+        <ul class="footer">
+          <li class="footer-right"><a href="#">Privacy</a></li>
+          <li class="footer-right"><a href="#">Terms</a></li>
+          <li class="footer-right"><a href="#">Settings</a></li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
